@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   min-width: 320px;
+   text-align: center;
+   color: #363636;
+}
+
+:root {
+    --colorDefault: #FFF;
+    --bgColor1: #FFAF14;
+}
+
+.bg-grey{
+    background-color: #D5E5F4;
+    }
+    
+.bg-blue{
+    background-color: #07B4D9;
+}
+    
+.bg-orange{
+    background-color: #F74E02;
+}
+
+.bg-ligth-green{
+    background-color: #D5E5F4;
+}
+
+.primery-color{
+    color: #FFAF14;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 2.5rem;
+ }
+
+.button, .button a{
+   color: #FFF;
+   text-decoration: none;
+  padding: 0.2rem 1rem;
+}
+
+.img-section{
+    max-height: 280px;
+    width: 90%;
+}
+
+.container{
+    padding: 1rem 2rem;
+}
+
+@media(min-width: 800px){
+    #sobre img{
+        max-height: 500px;
+    }
+}
+
+/* HEADER */
+.header-menu {
+    background-color: #F5EEDC;
+}
+
+.header-menu img {
+    width: 40px;
+    height: 40px;
+}
+
+.header-menu i {
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.menu {
+    background-color: var(--bgColor1);
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: -260px;
+    bottom: 0;
+    overflow-y: auto;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+}
+
+.menu.active {
+    left: 0;
+}
+
+.menu i {
+    color: var(--colorDefault);
+}
+
+.menu .list-items ul {
+    padding: 1rem;
+}
+
+.menu .list-items ul li {
+    list-style-type: none;
+    color: var(--colorDefault);
+    margin-bottom: 20px;
+}
+
+.menu .list-items ul li img {
+    padding-right: 10px;
+}
+
+/* SLIDE */
+.slider .carousel-inner img {
+    height: 200px;
+}
+
+ /* Sobre Nós */
+
+#sobre .img-sobre{
+    position: relative;
+    z-index: 1;
+}
+
+ #sobre .img-sobre::after{
+   content: "";
+   background-color: #F74E02;
+   width: 90%;
+   height: 100%;
+    position: absolute;
+    bottom: -30px;
+    left: 50px;
+    z-index: -1;
+    display: block;
+}
+
+ .b{
+    display: none;
+}
+ 
+ .content2{
+   padding: 5rem 1rem;
+   gap: 3rem;
+   flex-direction: column;
+ }
+ 
+ @media(min-width: 600px){
+    #sobre .content2{
+        padding: 5rem 2rem;
+        flex-direction: row-reverse;
+       align-items: center;
+       text-align: left;
+       gap: 3rem;
+       
+    }
+    .b{
+        display: block;
+    }
+
+    .a{
+        display: none;
+    }
+
+    #sobre .img-sobre::after{
+        bottom: -30px;
+        left: 30px;
+    }
+ 
+    .text-wrapp{
+       max-width: 50%;
+       }
+ }
+
+ @media(min-width: 800px){
+    .content2{
+    padding: 5rem 3rem;
+    }
+
+ }
+
+  /* Saúde Animal */
+ 
+ #saude-animal .content2{
+    text-align: center;
+    color: #4F4C4C;
+    padding-bottom: 0;
+    gap: 1.5rem; 
+   
+ }
+
+ #saude-animal h2{
+    color: #F74E02;
+ }
+
+ #saude-animal img{
+    width: 100%;
+    object-fit: cover;
+ }
+
+ @media(min-width: 600px){
+
+    #saude-animal .text-wrapp{
+        max-width: 80%;
+        margin: auto;
+    }
+ }
+
+ @media(min-width: 900px){
+    #saude-animal .content2{
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    #saude-animal img{
+        width: 60%
+     }
+
+     #saude-animal .text-wrapp{
+        max-width: 50%;
+    }
+   
+ }
+
+ /* Rações */
+ 
+ #racoes img{
+    border: 1rem solid var(--bgColor1);
+    object-fit: cover;
+ }
+
+ @media(min-width: 600px){
+    #racoes .container{
+        flex-direction: row;
+        align-items: center;
+       text-align: left;
+    }
+    
+    #racoes img{
+        max-width: 200px;
+     }
+ }
+
+ @media(min-width: 850px){
+    #racoes img{
+        max-width: 300px;
+     }
+ }
+
+.card{
+    padding: 2.5rem 1rem;
+    color: #F5EEDC;
+}
+
+.card h3{
+    padding: 1rem ;
+}
+@media(min-width: 800px){
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .5rem;
+        place-content: center;
+    }
+}
+@media(min-width: 1024px){
+.cards{
+    padding: 5rem;
+}
+}
+
+.card0:hover{
+    background-color: #f75002da;
+    transition: .2s;
+}
+
+.card1:hover{
+    background-color: #07b2d9d4;
+    transition: .2s;
+}
+
+
+ 
+
+
+
+ 
+ 
+ 
